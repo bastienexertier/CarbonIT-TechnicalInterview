@@ -38,7 +38,6 @@ namespace CarbonIT.Model
             
             if (_adventurersPositions.TryGetValue(adventurer, out Tuple<int, int> oldPosition))
             {
-                _adventurersPositions.Remove(adventurer);
                 _adventurers.Remove(oldPosition);
             }
 
